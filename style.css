@@ -1,0 +1,139 @@
+body{
+	/* border:3px solid rgb(255, 255, 0); */
+	height:970px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background-color:rgb(255, 255, 174);
+	animation-name: background;
+	animation-duration:20s;
+	transition-timing-function: ease;
+}
+
+@keyframes background{
+	0%{
+		background-color:rgb(194, 194, 255);
+	}
+	50%{
+		background-color:rgb(255, 237, 203);
+	}
+	100%{
+		background-color:rgb(207, 255, 207);
+	}
+
+}
+.column{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+
+.logo{
+	transition: transform.7s ease-in-out;
+    
+}
+
+.logo:hover{
+	transform: rotate(360deg);
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid rgb(0, 47, 255);
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	transform-origin: bottom;
+}
+
+   .triangle:hover{
+	   animation-name:bounce;
+	   animation-timing-function: ease;
+   }
+        @keyframes bounce{
+			0%{
+				transform:translateY(0);
+			}
+			50%{
+				transform:translateY(-100px);
+			}
+			100%{
+				transform:translateY(0);
+			}
+		}
+	.triangle:active{
+		background-color:lightblue;
+	}
+
+
+
+
+
+.oval{
+	height:130px;
+	width: 200px;
+	border-radius: 50%;
+	background-color:rgb(237, 36, 157);
+	opacity:0.6;
+	transition: 0.3s;
+}
+
+	.oval:hover{
+		opacity: 1;
+	}
+	.oval:active{
+		background-color:rgb(255, 182, 47);
+	}
+
+
+.circle{
+	
+		width: 200px;
+		height: 200px;
+		background: lightblue;
+		border-radius: 50%;
+		transition: 0.3s;
+	  }
+    
+	.circle:hover{
+        background-color: blue;
+	  }
+	.circle:active{
+		background-color:rgb(255, 0, 0);
+	}
+
+
+
+
+.square{
+	width:200px;
+	height: 200px;
+	background: linear-gradient(90deg, rgba(39,75,158,1) 27%, rgba(245,179,47,1) 38%);
+	transition: 2s;
+}
+	.square:hover{
+		border-radius: 50%;
+	    background: radial-gradient(circle, rgba(39,75,158,1) 15%, rgba(245,179,47,1) 55%);
+	
+}
+    .square:active{
+		border:3px solid rgb(0, 255, 98);
+	}
+
+a{
+	display:flex;
+	justify-content: flex-end;
+	align-items:center;
+}
+
+.text{
+   text-decoration:none;
+   color: black;
+   font-size:20px;
+   font-weight: bold;
+   display:inline;
+  
+}
+
